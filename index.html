@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAKEPANO | Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class = "logo">CAKEPANO</a>
+        <nav class="nav">
+            <a href="index.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="work.html">MY WORK</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html#order-form" class="order-link">ORDER</a> <!---takes the user directly to the order form-->
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>CAKEPANO</h1>
+            <p class="hero-tagline">HANDCRAFTED · MADE TO ORDER · ONE PAIR OF HANDS</p>
+
+            <div class="hero-photo">
+                <picture>
+                    <source media="(max-width: 560px)" srcset="images/hero-mobile.jpg">
+                    <source media="(max-width: 900px)" srcset="images/hero-tablet.jpg">
+                    <img alt="Berry cake by CAKEPANO" src="images/hero-desktop.jpg">
+                </picture>
+            </div> <!--pictutr container allows to use different image sizes accoring to the screen sizes, img is the default version for all screens larger than 900px-->
+            <p class="hero-small">ARTISAN HOME BAKERY</p>
+            <a class="outline-button" href="menu.html">EXPLORE THE MENU</a>
+        </section>
+
+        <div class="home-quote">
+            <img alt="Heart illustration" class="heart-icon" src="images/heart.svg">
+            <blockquote>“Taste, precision, and emotion.”</blockquote>
+            <p>— Philippe Conticini</p>
+        </div>
+    </main>
+    <footer>
+        <span class="footer-brand"><a aria-label="Back to home" class="footer-icon-link" href="index.html"><img alt="CAKEPANO heart-icon" src="images/heart.png"></a>CAKEPANO</span>
+        <span>HANDCRAFTED WITH LOVE · © 2026</span>
+        <span><a href="report.html">WEB REPORT</a></span>
+    </footer>
+</body>
+</html>

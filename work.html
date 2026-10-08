@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAKEPANO | My Work</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="work-page">
+    <header class="site-header">
+        <a class="logo" href="index.html">CAKEPANO</a>
+        <nav class="nav">
+            <a href="index.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="work.html">MY WORK</a>
+            <a href="about.html">ABOUT</a>
+            <a class="order-link" href="contact.html#order-form">ORDER</a>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <p class="section-number">03 — MY WORK</p>
+            <h1 class="page-title">Each cake is a one-of-a-kind.</h1>
+            <div class="work-grid">
+                <img alt="CAKEPANO banoffee" class="work-a" src="images/work-1.jpg">
+                <img alt="CAKEPANO cheesecake" src="images/work-2.jpg">
+                <img alt="CAKEPANO mini desserts" src="images/work-3.jpg">
+                <img alt="CAKEPANO honey-cake" src="images/work-4.jpg">
+                <img alt="Berry mini cakes by CAKEPANO" src="images/work-5.jpg">
+            </div>
+        </section>
+        <section class="iframe-gallery">
+            <h2>Featured work</h2>
+            <div class="gallery-layout"> <!--main gallery container, the whole gallery is in here-->
+                <div class="gallery-thumbnails"> <!--class for small images-->
+                    
+                    <a href="images/work-1.jpg" target="gallery-frame"> <!--to open the image inside the gallery iframe-->
+                        <img alt="Featured cake thumbnail 1" src="images/thumbs/work-1.jpg">
+                    </a> <!--small pic version thumbnail after the click opens in iframe as a large-->
+
+                    <a aria-label="View featured cake 2" href="images/work-2.jpg" target="gallery-frame">
+                        <img alt="Featured cake thumbnail 2" src="images/thumbs/work-2.jpg">
+                    </a>
+
+                    <a aria-label="View featured cake 3" href="images/work-3.jpg" target="gallery-frame">
+                        <img alt="Featured cake thumbnail 3" src="images/thumbs/work-3.jpg">
+                    </a>
+
+                    <a aria-label="View featured cake 4" href="images/work-4.jpg" target="gallery-frame">
+                        <img alt="Featured cake thumbnail 4" src="images/thumbs/work-4.jpg">
+                    </a>
+
+                    <a aria-label="View featured cake 5" href="images/work-5.jpg" target="gallery-frame">
+                        <img alt="Featured cake thumbnail 5" src="images/thumbs/work-5.jpg">
+                    </a>
+
+                </div>
+                <iframe 
+                    loading="lazy"                  
+                    name="gallery-frame"
+                    src="images/work-1.jpg"
+                    title="CAKEPANO featured cake gallery">
+                </iframe>
+                <!--"1. the target value used in thumbnails links must match the iframe name (= gallery-frame) 2."lazy" to load the iframe only when it is needed, starts to become visible on the page-->
+            </div>
+        </section>
+        <div class="work-video-section">
+            <video class="work-video" autoplay loop muted playsinline>
+                <source src="videos/cakepano-video.mp4" type="video/mp4">
+            </video> <!--playsinline to play the video inside the page on mobile-->
+        </div>
+        <div class = "work-audio">
+            <p>Sounds from the kitchen...</p>
+
+            <audio controls>
+                <source src = "audio/mixing-audio.mp3">
+            </audio>
+
+        </div>
+    </main>
+    <footer>
+        <span class="footer-brand"><a aria-label="Back to home" class="footer-icon-link" href="index.html"><img alt="CAKEPANO heart-icon" src="images/heart.png"></a>CAKEPANO</span>
+        <span>HANDCRAFTED WITH LOVE · © 2026</span>
+        <span><a href="report.html">WEB REPORT</a></span>
+    </footer>
+</body>
+</html>
